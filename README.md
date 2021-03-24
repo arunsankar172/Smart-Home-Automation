@@ -4,7 +4,7 @@
 * ESP8266
 * Relay
 
-# Dynamic implementation with switch state feedback and two operation modes
+# Dynamic implementation (AJAX) with switch state feedback and two operation modes
   * Auto
   * Manual
 
