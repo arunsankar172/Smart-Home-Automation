@@ -1,3 +1,4 @@
+//RTC Based Light ON/OFF - Failsafe mode
 #include <ESP8266WiFi.h>
 #include <espnow.h>
 #include <Wire.h>
