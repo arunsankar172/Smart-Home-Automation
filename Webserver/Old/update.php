@@ -1,17 +1,17 @@
 <?php
-$servername = "localhost";
-$dbname = "switchdata";
-$username = "debian-sys-maint";
-$password = "j9pqeKJ1oAmvElkW";	
+$servername = "localhost";   //servername
+$username = "test";			 //username
+$password = "1234";   //Password for Database
+$dbname = "data";			 //Database name
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 $ids=$_POST["id"];
 $val=$_POST["val"];
-$sql = "UPDATE switch SET state='".$val."' WHERE id='".$ids."'";
+ $sql = "UPDATE state SET val='".$val."' WHERE id='".$ids."'";
 if (mysqli_query($conn, $sql)) {
-    			//After Inertation
+    echo "Updated";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
